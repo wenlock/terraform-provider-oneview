@@ -100,6 +100,7 @@ func Provider() terraform.ResourceProvider {
 			"oneview_logical_switch_group":       resourceLogicalSwitchGroup(),
 			"oneview_icsp_server":                resourceIcspServer(),
 			"oneview_i3s_plan":                   resourceI3SPlan(),
+			"oneview_logical_interconnect_group_interconnect_map_entry_template": resourceInterconnectGroupInterconnectMapEntryTemplate(),
 		},
 		ConfigureFunc: providerConfigure,
 	}
